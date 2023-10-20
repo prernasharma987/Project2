@@ -16,7 +16,10 @@ import { ContactComponent } from './contact/contact.component';
 import { MeanComponent } from './mean/mean.component';
 import { MernComponent } from './mern/mern.component';
 import { JavaComponent } from './java/java.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './user.service';
+import { RestComponent } from './rest/rest.component'; 
 @NgModule({
 declarations: [
 AppComponent,
@@ -33,13 +36,15 @@ NavComponent,
 ContactComponent,
 MeanComponent,
 MernComponent,
-JavaComponent
+JavaComponent,
+RestComponent
 ],
 imports: [
 BrowserModule,ReactiveFormsModule,
+HttpClientModule,
 routes
 ],
-providers: [],
+providers: [UserService],
 bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'LVC-Final_Project';
+  title = 'LVC-FinalProject';
 }

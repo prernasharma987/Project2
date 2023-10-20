@@ -12,6 +12,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { MeanComponent } from './mean/mean.component';
 import { MernComponent } from './mern/mern.component';
 import { JavaComponent } from './java/java.component';
+import { RestComponent } from './rest/rest.component';
+
 
 //Create and export a variable called Router in the app.routing.ts, which would be a collection of all routes inside the Angular application.
 // pathMatch is specifying a strict matching of path to reach the destination page.
@@ -26,7 +28,8 @@ export const router: Routes = [
     { path: 'gallery', component:GalleryComponent  },
     { path: 'mean', component:MeanComponent  },
     { path: 'mern', component:MernComponent  },
-    { path: 'java', component:JavaComponent  }
+    { path: 'java', component:JavaComponent  },
+    { path: 'restuser', component:RestComponent  },
 
 ];
 //RouterModule.forRoot is for creating routes for the entire application
